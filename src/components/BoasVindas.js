@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from "react";
 import { StyleSheet, Text, View, TouchableHighlight } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { MaterialIcons } from "@expo/vector-icons";
@@ -22,8 +22,8 @@ export default class App extends React.Component {
             </Text>
         </View>
         <View style={{ flex: 1 }}>
-          <TouchableHighlight onPress={() => Actions.formSearch() } underlayColor='#ff0000'>
-            <Text style={{ color: '#fff', fontSize: 20 }}>Procure seu restaurante! Clique aqui!</Text>
+          <TouchableHighlight onPress={() => Actions.formSearch()} underlayColor='transparent'>
+            <Text style={{ fontSize: 20, color: '#fff' }}>Procurando restaurante? Clique aqui!</Text>
           </TouchableHighlight>
         </View>
       </View>
